@@ -1,5 +1,5 @@
 <template>
-    <div id="app" class="2xl:container xl:mx-auto grid grid-cols-auto font-body md:grid-flow-col">
+    <div id="app" class="2xl:container xl:mx-auto grid grid-cols-auto font-body md:grid-flow-col min-h-screen">
         <!--    Dina val column-->
         <LeftMenu></LeftMenu>
 
