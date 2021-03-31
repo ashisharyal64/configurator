@@ -21,7 +21,7 @@
         <li  class=" text-white text-opacity-20 inline-block md:block mr-4" >
             <div class="inline-block">•</div>
             <div class="ml-4 inline-block ">
-                <router-link to="/gavel">
+                <router-link to="/gavel-fram">
                     GAVEL FRAM
                 </router-link>
             </div>

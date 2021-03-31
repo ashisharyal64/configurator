@@ -12,97 +12,21 @@
                 <div class="w-1/2">
                     Artikel
                 </div>
-                <div class="w-1/2">
+                <div class="w-1/2 text-right">
                     Artikelnummer
                 </div>
 
             </div>
 <!--use component to calculate price here-->
-            <div class="flex flex-row my-2">
-                <div class="w-1/2">
-                    Fällbar gavel
-                </div>
-                <div class="w-1/2">
-                    30102414
-                </div>
+           <PriceColumnComponent ></PriceColumnComponent>
 
-            </div>
 
-            <div class="flex flex-row my-2 ">
-                <div class="w-1/2">
-                    Fällbar gavel
-                </div>
-                <div class="w-1/2">
-                    30102414
-                </div>
-
-            </div>
-
-            <div class="flex flex-row my-2 ">
-                <div class="w-1/2">
-                    Fällbar gavel
-                </div>
-                <div class="w-1/2">
-                    30102414
-                </div>
-
-            </div>
-
-            <div class="flex flex-row my-2 ">
-                <div class="w-1/2">
-                    Fällbar gavel
-                </div>
-                <div class="w-1/2">
-                    30102414
-                </div>
-
-            </div>
-
-            <div class="flex flex-row my-2 ">
-                <div class="w-1/2">
-                    Fällbar gavel
-                </div>
-                <div class="w-1/2">
-                    30102414
-                </div>
-
-            </div>
-
-            <div class="flex flex-row my-2 ">
-                <div class="w-1/2">
-                    Fällbar gavel
-                </div>
-                <div class="w-1/2">
-                    30102414
-                </div>
-
-            </div>
-
-            <div class="flex flex-row my-2 ">
-                <div class="w-1/2">
-                    Fällbar gavel
-                </div>
-                <div class="w-1/2">
-                    30102414
-                </div>
-
-            </div>
-
-            <div class="flex flex-row my-2 ">
-                <div class="w-1/2">
-                    Fällbar gavel
-                </div>
-                <div class="w-1/2">
-                    30102414
-                </div>
-
-            </div>
 
             <div class="flex flex-row my-5 ">
                 <div class="w-1/2">
                     Antal
                 </div>
-                <div class="w-1/2">
+                <div class="w-1/2 text-right">
                     1 ST
                 </div>
 
@@ -125,8 +49,11 @@
 </template>
 
 <script>
+    import PriceColumnComponent from "./configurator-options/PriceColumnComponent";
     export default {
-        name: "PriceColumn"
+        name: "PriceColumn",
+        components:{PriceColumnComponent},
+
     }
 </script>
 

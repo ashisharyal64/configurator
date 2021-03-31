@@ -2,7 +2,7 @@
     <div class="trolly pt-20 pb-20 relative ">
 <!--        1. top -->
         <div class="absolute trolly-top">
-                <img :src="top" >
+                <img :src="getLock.image || lock" >
         </div >
 
 <!--        3. front -->
@@ -11,15 +11,15 @@
         </div>
 <!--        4. back-->
             <div class="absolute trolly-back">
-                    <img :src="back" >
+                    <img :src="getGavelBack.image || back" >
             </div>
 <!--        5. left  -->
         <div class="absolute trolly-left">
-                <img :src="left" >
+                <img :src="getLeft.image || left" >
         </div>
 <!--        6. right  -->
         <div class="absolute trolly-right">
-                <img :src="right">
+                <img :src="getRight.image || right">
         </div>
 
 <!--        2. bottom -->
@@ -36,7 +36,7 @@
         name: "Trolly",
         data(){
             return{
-                top:require("../assets/images/1250/base/top.png"),
+                lock:require("../assets/images/1250/base/top.png"),
                 bottom:require("../assets/images/1250/base/bottom.png"),
                 front:require("../assets/images/1250/base/front.png"),
                 back:require("../assets/images/1250/base/back.png"),
@@ -51,7 +51,19 @@
             },
             getGavelFram(){
                 return this.$store.getters.getGavelFram
-            }
+            },
+            getRight(){
+                return this.$store.getters.getRight
+            },
+            getGavelBack(){
+                return this.$store.getters.getGavelBack
+            },
+            getLeft(){
+                return this.$store.getters.getLeft
+            },
+            getLock(){
+                return this.$store.getters.getLock
+            },
         }
 
     }

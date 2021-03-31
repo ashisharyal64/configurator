@@ -29,7 +29,7 @@
         methods:{
             onContinue(){
 
-                this.$router.push('gavel-fram');
+                this.$router.push('right');
 
             }
         }

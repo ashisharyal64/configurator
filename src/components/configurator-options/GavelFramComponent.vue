@@ -4,7 +4,8 @@
         <label :for="gavelfram.id">
             <img :src="gavelfram.image" class="w-16">
         </label>
-        <input type="radio" :id="gavelfram.id" name="gavelfram" :value="gavelfram" @change="selectGavelFram(gavelfram)">
+        <input type="radio" :id="gavelfram.id" name="gavelfram" class="hidden"  :value="gavelfram"
+               @change="selectGavelFram(gavelfram)">
     </div>
 </template>
 

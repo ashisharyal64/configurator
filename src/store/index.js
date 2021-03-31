@@ -114,9 +114,56 @@ export default new Vuex.Store({
       }
 
     ],
+    rights:[
+      {
+        id:8,
+        articleNumber:8,
+        name:"Removable two piece",
+        price:100,
+        image:require("../assets/images/1250/right/article_side_right_removable_two_piece_height_1250.png")
+      },
+      {
+        id:9,
+        articleNumber:9,
+        name:"Removable whole height",
+        price:200,
+        image:require("../assets/images/1250/right/article_side_right_removable_whole_height_1250.png")
+      },
+    ],
+    gavelbacks:[
+      {
+        id:10,
+        articleNumber:10,
+        name:"Rare Pinchable",
+        price:100,
+        image:require("../assets/images/1250/back/article_gable_rear_pinchable_height_1250.png")
+      },
+    ],
+    lefts:[
+      {
+        id:11,
+        articleNumber:11,
+        name:"Rare Pinchable",
+        price:100,
+        image:require("../assets/images/1250/left/article_side_left_pinchable_height_1250.png")
+      },
+    ],
+    locks:[
+      {
+        id:12,
+        articleNumber:12,
+        name:"Top stacking",
+        price:100,
+        image:require("../assets/images/1250/top/article_top_stacking_long_side_height_1250.png")
+      },
+    ],
     order:{
       bottom:[],
       gavelfram:[],
+      right:[],
+      gavelback:[],
+      left:[],
+      lock:[]
 
     }
 
@@ -129,6 +176,21 @@ export default new Vuex.Store({
     getGavelFram(state) {
       return state.order.gavelfram
     },
+    getRight(state){
+      return state.order.right
+    },
+    getGavelBack(state){
+      return state.order.gavelback
+    },
+    getLeft(state){
+      return state.order.left
+    },
+    getLock(state){
+      return state.order.lock
+    },
+    getOrder(state){
+      return state.order
+    }
 
   },
 
@@ -138,6 +200,18 @@ export default new Vuex.Store({
     },
     addGavelFram(state, gavelfram){
       state.order.gavelfram = gavelfram;
+    },
+    addRight(state, right){
+      state.order.right = right
+    },
+    addGavelBack(state, gavelback){
+      state.order.gavelback = gavelback
+    },
+    addLeft(state, left){
+      state.order.left = left
+    },
+    addLock(state, lock){
+      state.order.lock = lock
     }
   },
   actions: {
