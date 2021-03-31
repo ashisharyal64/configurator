@@ -2,3 +2,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.trolly{
+    width:245px;
+    z-index: 11;
+    min-height: 500px;
+}
+.trolly-top{
+    top:88px
+}
+.trolly-front{
+    top: 109px;
+    right: 2px;
+}
+.trolly-back{
+    left: -18px;
+    top: 81px;
+}
+.trolly-left{
+    left: -15px;
+    top: 100px;
+}
+.trolly-right{
+    right: 8px;
+    top: 79px;
+    z-index: -11;
+}
+.trolly-bottom{
+    top:303px;
+    left:-8px;
+    z-index:-9
+
+}

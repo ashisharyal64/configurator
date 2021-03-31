@@ -5,6 +5,7 @@ import Height from '../views/Height'
 import Bottom from '../views/Bottom.vue'
 import Gavel from '../views/Gavel.vue'
 import Right from '../views/Right.vue'
+import GavelBack from '../views/GavelBack.vue'
 import Left from '../views/Left.vue'
 import Lock from '../views/Lock.vue'
 import Shelves from '../views/Shelves.vue'
@@ -13,6 +14,11 @@ import Shelves from '../views/Shelves.vue'
 Vue.use(VueRouter)
 
 const routes = [
+  // {
+  //   path: '/',
+  //   name: 'Home',
+  //   component: Home
+  // },
   {
     path: '/',
     name: 'Home',
@@ -24,7 +30,7 @@ const routes = [
     component: Bottom
   },
   {
-    path: '/gavel',
+    path: '/gavel-fram',
     name: 'Gavel',
     component: Gavel
   },
@@ -32,6 +38,11 @@ const routes = [
     path: '/right',
     name: 'Right',
     component: Right
+  },
+  {
+    path: '/gavel-bak',
+    name: 'Gavel Bak',
+    component: GavelBack
   },
   {
     path: '/left',

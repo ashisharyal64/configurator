@@ -8,12 +8,14 @@ module.exports = {
       },
       backgroundColor: theme => ({
         'primary':'#1E4C97',
-        'secondary':'#F1F1F1'
+        'secondary':'#F1F1F1',
       })
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }
